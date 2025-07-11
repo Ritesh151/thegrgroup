@@ -1,0 +1,86 @@
+Page1: Theme white & Blue 
+Page2: as it is 
+Page3: content in center and alignments
+Page4: put accessories in page 4
+
+----------------------------------
+aa page 6 che (Changes)
+Page5: cuplock uper na half page ma cuplock with size and weight && baki na half page ma cuplock na imgs
+----------------------------------
+
+-----------------------------------
+aa page 7 che 
+Page6: chnage the sequence 
+
+
+Pagge8 ma size ansd width 
+
+-----------------------------------
+aa page 8 che 
+Page7: uper na 1st : GI & MS ANTI SKID PLANKS w/o hook (side1 - desc. & side2- img)
+                2nd: with hook GI & MS ANTI SKID PLANKS w/o hook (side1 - desc. & side2- img)
+                MS box pipe khapeda (jali) (side1 - desc. & side2- img)
+                GI TOE BOARD (side1 - desc. & side2- img)
+                patti ITEM: TIE ROD, ANCHOR WING NUT  
+-----------------------------------                
+
+
+-----------------------------------     
+aa page 9 che 
+Page8: half frame: HFRAME same as old Page7 
+    half frame: BASE JACK & U HEAD JACK
+    
+-----------------------------------     
+
+Page9: MS PRO JACK with size chart and img in half page 
+        halfpage: GI Shuttering plate / TATA BOX description with side by side and size+width 
+
+
+
+
+page10: Thanks you
+
+
+Accesssories Items:
+Page1 = 
+1) Fix COUPLER in forged
+2) SWIVEL COUPLER in forged 
+3) Fix COUPLER in sheet metal
+4) SWIVEL COUPLER in sheet metal
+5) PutLog COUPLER 
+6) Sleeve COUPLER 
+7) Spigot pin / joint pin 
+8) Expending Joint pin 
+9) Anchor Nut 
+10) Beam Clamp
+
+
+Page2= 
+1) Ladder Box Clamp
+2) BRC Clamp
+3) Prop Sleeve
+4) Water Stopper 
+5) Waller Plate
+6) I-Bolt / T-Bolt 
+7) GOGO Machine 
+8) GOGO Nut 
+9) Hollow Jack Nut 
+10) Prop Nut Standard 
+11) Prop Nut L&T
+12) Sikanja 
+
+gap space in end do div in line: 
+Page1: Top Cup, Bottom Cup, Ledger Blade
+Page2: coverup space
+
+
+
+
+
+
+
+
+
+
+Website: 
+remove the image from about us 

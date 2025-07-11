@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The GR Group Pvt. Ltd. - Construction & Scaffolding Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    @media print {
+      body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+      }
+      .container {
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background: linear-gradient(to bottom, #f8f8f8 0%, #e8e8e8 100%);
+      padding: 12mm;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 1px solid #ccc;
+    }
+
+    .header-logo {
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      background: linear-gradient(to right, #e74c3c, #c0392b);
+      border-radius: 8px;
+    }
+
+    .header-logo img {
+      max-width: 180px;
+      height: auto;
+    }
+
+    .safety-badge {
+      position: absolute;
+      top: 18mm;
+      right: 18mm;
+      background: #27ae60;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 9pt;
+      font-weight: 600;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .title-section {
+      text-align: center;
+      margin-top: 6mm;
+    }
+
+    .title-section h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 4px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      color: #fff;
+      padding: 6px 18px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 11pt;
+      display: inline-block;
+    }
+
+    .tagline {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      font-size: 10.5pt;
+      margin-top: 3mm;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6mm;
+      gap: 10mm;
+      flex: 1;
+    }
+
+    .services-column {
+      flex: 1;
+    }
+
+    .services-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13pt;
+      color: #e74c3c;
+      margin-bottom: 5px;
+      border-bottom: 2px solid #e74c3c;
+      padding-bottom: 2px;
+      text-transform: uppercase;
+    }
+
+    .services div {
+      background: #fff;
+      padding: 6px 12px;
+      margin: 4px 0;
+      border-radius: 4px;
+      border-left: 4px solid #e67e22;
+      font-size: 10pt;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .image-box {
+      text-align: center;
+      margin: 6mm 0;
+    }
+
+    .image-box img {
+      max-width: 100%;
+      max-height: 65mm;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border: 4px solid #fff;
+    }
+
+    .footer {
+      background: linear-gradient(to right, #34495e, #2c3e50);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 9.5pt;
+      margin-top: 4mm;
+    }
+
+    .footer strong {
+      color: #f1c40f;
+      font-size: 10.5pt;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .contact-info a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 9.5pt;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 8px;
+      margin-top: 5px;
+    }
+
+    .social-icons a img {
+      height: 15px;
+      filter: brightness(0) invert(1);
+    }
+
+    .social-icons a {
+      display: inline-block;
+      padding: 5px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background: #f1c40f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header-logo">
+      <img src="5.png" alt="The GR Group Logo" />
+    </div>
+
+    <div class="safety-badge">OSHA Certified | Safety First</div>
+
+    <div class="title-section">
+      <h1>The GR Group Pvt. Ltd.</h1>
+      <div class="highlight-box">Scaffolding & Construction Solutions</div>
+    </div>
+
+    <div class="tagline">"Building Your Vision, One Scaffold at a Time"</div>
+
+    <div class="services-container">
+      <div class="services-column">
+        <div class="services-title">Scaffolding Services</div>
+        <div class="services">
+          <div>Frame Scaffolding Systems</div>
+          <div>Tube & Clamp Scaffolding</div>
+          <div>Suspended Scaffolding</div>
+          <div>Mobile Scaffolding Towers</div>
+          <div>Shoring & Support Systems</div>
+          <div>Scaffolding Inspection & Certification</div>
+        </div>
+      </div>
+      <div class="services-column">
+        <div class="services-title">Construction Services</div>
+        <div class="services">
+          <div>Construction Equipment Rental</div>
+          <div>Industrial Maintenance</div>
+          <div>Turnkey Construction Solutions</div>
+          <div>Project Management</div>
+          <div>Safety Compliance Consulting</div>
+          <div>Scaffold Design & Engineering</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-box">
+      <img src="https://lirp.cdn-website.com/f704dc33/dms3rep/multi/opt/Brisbane+Scaffolding+Co.+Blog+-+Commercial+Aluminium+Mobile+1-640w.png" alt="Construction Site" />
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <strong>YOUR TRUSTED SCAFFOLDING PARTNER</strong>
+        THE GR GROUP PVT. LTD.
+        <div class="contact-info">
+          <a href="http://www.thegrgroup.com">🌐 www.grgroup.com</a>
+          <a href="mailto:rathodgaurang83@gmail.com">✉ thegrgroup0304@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <strong>24/7 Emergency Services</strong>
+        <div class="contact-info">
+          <a href="tel:+919904693899">📞 +91 9697979607</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

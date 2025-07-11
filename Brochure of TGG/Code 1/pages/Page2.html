@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The GR Group - About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    @media print {
+      body {
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+      }
+      .container {
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background: linear-gradient(to bottom, #f8f8f8 0%, #e8e8e8 100%);
+      padding: 15mm;
+      color: #333;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10mm;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .header img {
+      height: 70px;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    }
+
+    .highlight-box {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      color: #fff;
+      font-size: 14pt;
+      font-weight: 600;
+      padding: 8px 25px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24pt;
+      margin: 15px 0 20px 0;
+      color: #333;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #e74c3c, #e67e22);
+      border-radius: 3px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      flex-grow: 1;
+    }
+
+    .section {
+      background: #fff;
+      border-left: 4px solid #e67e22;
+      padding: 15px 20px;
+      border-radius: 8px;
+      height: 100%;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      border: 1px solid #eee;
+    }
+
+    .section h3 {
+      color: #e74c3c;
+      margin-bottom: 10px;
+      font-size: 14pt;
+      font-weight: 700;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .section p {
+      font-size: 11pt;
+      margin-bottom: 8px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .section ul {
+      margin-left: 18px;
+      font-size: 10.5pt;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .section li::before {
+      content: '•';
+      color: #e67e22;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .section strong {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 10pt;
+      background: linear-gradient(to right, #e67e22, #e74c3c);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 14px;
+      font-weight: 600;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .spacer {
+      height: 10mm;
+    }
+
+    .footer {
+      font-size: 10pt;
+      color: #fff;
+      background: linear-gradient(to right, #34495e, #2c3e50);
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .footer-left {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 200px;
+      text-align: right;
+    }
+
+    .footer strong {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #f1c40f;
+      font-size: 12pt;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-info {
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .contact-info a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .contact-info span {
+      color: #bbb;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background: #f1c40f;
+      transform: translateY(-3px);
+    }
+
+    .social-icons img {
+      height: 16px;
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 10mm;
+      }
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      .full-width {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="header">
+        <img src="5.png" alt="The GR Group Logo" />
+        <div class="highlight-box">ABOUT US</div>
+      </div>
+
+      <h2>WHO WE ARE</h2>
+
+      <div class="content-grid">
+        <div class="section">
+          <h3>Our Journey</h3>
+          <p>Established in 2005, <strong>The GR Group</strong> has been a key player in manufacturing and exporting scaffolding and shuttering solutions. With a strong foundation in engineering excellence, our products are recognized for their high durability, precision, and reliable performance.</p>
+        </div>
+
+        <div class="section">
+          <h3>What We Do</h3>
+          <p>In addition to manufacturing, we offer scaffolding products on a rental basis. Our end-to-end service includes product fitting, dismantling, transportation, and on-site supervision.</p>
+          <div class="badge">Full Service Solutions</div>
+        </div>
+
+        <div class="section">
+          <h3>Our Workforce</h3>
+          <p>Our skilled and committed team ensures timely delivery and adherence to client specifications. With deep industry knowledge and continuous training, our team is a vital part of our ongoing success.</p>
+        </div>
+
+        <div class="section">
+          <h3>Visionary Leadership</h3>
+          <p>Our leadership team brings decades of experience and strategic foresight that guide our operations. Under their direction, we've expanded our capabilities and market reach.</p>
+        </div>
+
+        <div class="section full-width">
+          <h3>Our Mission</h3>
+          <p>To offer comprehensive solutions from design to delivery, fostering long-term relationships through innovation, quality, and customer satisfaction.</p>
+          <ul>
+            <li>Deliver exceptional scaffolding solutions</li>
+            <li>Maintain highest safety standards</li>
+            <li>Innovate continuously & Exceed customer expectations</li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>

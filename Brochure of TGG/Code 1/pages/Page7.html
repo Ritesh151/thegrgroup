@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The GR Group - Page 6</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { margin: 0; -webkit-print-color-adjust: exact; }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background: linear-gradient(to bottom, #f8f8f8 0%, #e8e8e8 100%);
+      padding: 12mm;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10mm;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .header img {
+      height: 60px;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    }
+
+    .title-area {
+      text-align: right;
+    }
+
+    .title-area h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22pt;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      padding: 6px 20px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13pt;
+      border-radius: 5px;
+      margin-top: 5px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .section-title {
+      background: linear-gradient(to right, #e74c3c, #c0392b);
+      padding: 6px 16px;
+      font-weight: 600;
+      font-size: 13pt;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7mm;
+    }
+
+    .extra-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 7mm;
+      margin-top: 10mm;
+    }
+
+    .item {
+      display: flex;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      gap: 10px;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      border-left: 4px solid #e67e22;
+    }
+
+    .item img {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: #fff;
+      padding: 6px;
+      border: 1px solid #eee;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .item-text {
+      flex: 1;
+    }
+
+    .item-text strong {
+      font-size: 11pt;
+      color: #e74c3c;
+      display: block;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .item-text span {
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #555;
+      display: block;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 12mm;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      flex: 1;
+      max-width: 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      border-left: 4px solid #e67e22;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-height: 120px;
+      object-fit: contain;
+      background: #fff;
+      padding: 4px;
+      border-radius: 6px;
+      border: 1px solid #eee;
+    }
+
+    .badge {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 9pt;
+      margin-bottom: 6px;
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .section p {
+      font-size: 9pt;
+      color: #555;
+      line-height: 1.5;
+      margin-top: 6px;
+      padding: 0 10px;
+    }
+
+    .footer {
+      font-size: 9pt;
+      text-align: center;
+      padding: 8px 0;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <img src="5.png" alt="The GR Group Logo">
+      <div class="title-area">
+        <h1>SCAFFOLDING & FORMWORK</h1>
+        <div class="highlight-box">PRODUCT RANGE</div>
+      </div>
+    </div>
+
+    <!-- Section 1 - MS Box Pipe -->
+    <div class="section">
+      <h2 class="section-title">MS Box Pipe & Toe Guard</h2>
+      <div class="image-row">
+        <div class="image-box">
+          <div class="badge">MS BOX PIPE / JALI / KHAPEDA</div>
+          <img src="https://4.imimg.com/data4/FP/HQ/MY-4401038/khapeda-steel-walkway-plank-500x500.jpg" alt="MS Box">
+        </div>
+        <div class="image-box">
+          <div class="badge">TOE BOARD / GUARD</div>
+          <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/RN/CS/IG/3615185/scaffolding-fixed-type-toe-board-500x500.jpeg" alt="Toe Board">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 - GI Runner -->
+    <div class="section">
+      <h2 class="section-title">GI SHUTTERING RUNNER</h2>
+      <div class="image-row" style="align-items: center;">
+        <div class="image-box" style="max-width: 50%;">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/292367158/MN/JB/FI/12478633/gi-lip-section-500x500.jpg" alt="Shuttering Runner">
+        </div>
+        <div style="flex: 1; padding-left: 20mm; font-size: 2em;">
+          <p>
+            We are a leading manufacturer & exporter of GI shuttering runner, commonly used for slab support.
+            Available in 50x50 & 75x50 sizes. Custom sizes available.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 - Walkway Planks -->
+    <div class="section">
+      <h2 class="section-title">Walkway Planks</h2>
+      <div class="image-row">
+        <div class="image-box">
+          <div class="badge">ANTISKID PLANKS AUTO LOCK HOOK</div>
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/319706027/YB/YR/IX/26746592/apal-1.jpg" alt="Auto Lock">
+        </div>
+        <div class="image-box">
+          <div class="badge">ANTISKID PLANKS WITHOUT HOOK</div>
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/6/319705117/VB/AS/DJ/26746592/apwh-1-500x500.jpg" alt="Without Hook">
+        </div>
+      </div>
+      <p>
+        The GR Group offers Walkway Planks with Auto Lock Hook, fixed hooks, and solar walkway planks. Custom options available per customer needs.
+      </p>
+    </div>
+
+        <div class="section-title" style="margin-top: 10mm;">Cuplock Accessories</div>
+    <div class="extra-grid">
+      <div class="item">
+        <img src="https://5.imimg.com/data5/YN/DA/MY-1440275/top-cup.jpg" />
+        <div class="item-text">
+          <strong>Top Cup</strong>
+          <span>Locks ledger blades at top junctions in Cuplock systems.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2021/1/MB/YV/ZX/10851652/ledger-plate-top-bottom-cup-500x500.jpg" />
+        <div class="item-text">
+          <strong>Bottom Cup</strong>
+          <span>Base support for vertical standards in Cuplock scaffolding.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/LF/YI/OM/2768/ledger-blade.png" />
+        <div class="item-text">
+          <strong>Ledger Blade</strong>
+          <span>Connects ledgers to standards, held by top & bottom cups.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

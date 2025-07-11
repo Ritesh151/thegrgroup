@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE GR GROUP - Thank You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { margin: 0; -webkit-print-color-adjust: exact; }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background: linear-gradient(to bottom, #f8f8f8 0%, #e8e8e8 100%);
+      padding: 12mm;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10mm;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .header img {
+      height: 60px;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    }
+
+    .title-area {
+      text-align: right;
+    }
+
+    .title-area h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22pt;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      padding: 6px 20px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13pt;
+      border-radius: 5px;
+      margin-top: 5px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .thankyou-header {
+      font-family: 'Oswald', sans-serif;
+      font-size: 36pt;
+      font-weight: 700;
+      color: #e74c3c;
+      text-align: right;
+      margin-top: 10mm;
+      margin-bottom: 20mm;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10mm;
+      max-width: 130mm;
+      margin-left: auto;
+      margin-right: 10mm;
+    }
+
+    .card {
+      background: #fff;
+      color: #555;
+      border-left: 4px solid #e67e22;
+      padding: 12px 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-start;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 22px;
+      height: 22px;
+      margin-right: 12px;
+      margin-top: 3px;
+      filter: brightness(0.8);
+    }
+
+    .card-text {
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
+    .card-text strong {
+      color: #e74c3c;
+      font-weight: 600;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      background: linear-gradient(to right, #25D366, #1ebe5b);
+      color: white;
+      padding: 12px 24px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      width: fit-content;
+      margin: 10mm auto 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .whatsapp-btn:hover {
+      background: linear-gradient(to right, #1ebe5b, #25D366);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10mm;
+      left: 20mm;
+      right: 20mm;
+      text-align: center;
+      font-size: 9pt;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="5.png" alt="GR Group Logo">
+      <div class="title-area">
+        <h1>THE GR GROUP</h1>
+        <div class="highlight-box">Thank You</div>
+      </div>
+    </div>
+
+    <!-- Thank You Message -->
+    <div class="thankyou-header">Thank You</div>
+
+    <!-- Contact Cards -->
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location">
+        <div class="card-text">
+          <strong>Location:</strong><br>
+          24, Shyam Trade Center, Kathwada-Singarva Road,<br>
+          Opp. Ambuja Cement Godown, Kathwada, Ahmedabad – 382430
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone">
+        <div class="card-text">
+          <strong>Contact:</strong><br>
+          9697979607 / 9904693899
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="Website">
+        <div class="card-text">
+          <strong>Website:</strong><br>
+          www.grgroup.com
+        </div>
+      </div>
+
+      <a class="whatsapp-btn" href="https://wa.me/919904693899" target="_blank">
+        💬 Message us on WhatsApp (9904693899)
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2025 THE GR GROUP. Committed to Building Strong Foundations.
+    </div>
+  </div>
+</body>
+</html>

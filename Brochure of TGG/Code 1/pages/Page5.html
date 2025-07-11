@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>THE GR GROUP - Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page { 
+      size: A4; 
+      margin: 0; 
+    }
+    @media print {
+      body { 
+        margin: 0; 
+        -webkit-print-color-adjust: exact; 
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background: linear-gradient(to bottom, #f8f8f8 0%, #e8e8e8 100%);
+      padding: 15mm;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8mm;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .header img {
+      height: 70px;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    }
+
+    .title-area {
+      text-align: right;
+    }
+
+    .title-area h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24pt;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      padding: 8px 25px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14pt;
+      border-radius: 5px;
+      margin-top: 8px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 3px solid #a04000;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .section-title {
+      background: linear-gradient(to right, #e74c3c, #c0392b);
+      padding: 8px 20px;
+      font-weight: 600;
+      font-size: 14pt;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .accessories-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8mm;
+      margin-top: 5mm;
+      height: calc(100% - 100px);
+      overflow: hidden;
+    }
+
+    .item {
+      display: flex;
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-left: 4px solid #e67e22;
+      transition: all 0.3s ease;
+      height: 100%;
+      max-height: 80px;
+    }
+
+    .item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border-left: 4px solid #e74c3c;
+    }
+
+    .item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: #fff;
+      padding: 8px;
+      border: 1px solid #eee;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .item-text {
+      flex: 1;
+    }
+
+    .item-text strong {
+      font-size: 11pt;
+      color: #e74c3c;
+      display: block;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .item-text span {
+      font-size: 9.5pt;
+      line-height: 1.4;
+      color: #555;
+      display: block;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 15mm;
+      left: 15mm;
+      right: 15mm;
+      font-size: 10pt;
+      color: #fff;
+      background: linear-gradient(to right, #34495e, #2c3e50);
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .footer-left {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-right {
+      flex: 1;
+      min-width: 200px;
+      text-align: right;
+    }
+
+    .footer strong {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #f1c40f;
+      font-size: 11pt;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contact-info {
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .contact-info a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 9pt;
+    }
+
+    .contact-info a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .contact-info span {
+      color: #bbb;
+      font-size: 9pt;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background: #f1c40f;
+      transform: translateY(-2px);
+    }
+
+    .social-icons img {
+      height: 14px;
+      filter: brightness(0) invert(1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="5.png" alt="The GR Group Logo" />
+      <div class="title-area">
+        <h1>Accessories</h1>
+        <div class="highlight-box">Premium Scaffolding Components</div>
+      </div>
+    </div>
+
+    <div class="section-title">ACCESSORIES LIST</div>
+
+    <div class="accessories-grid">
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2024/12/476328654/LH/HK/VE/3849635/ladder-box-clamp-best-price.jpeg" />
+        <div class="item-text">
+          <strong>Ladder Box Clamp</strong>
+          <span>Secures ladder sections to scaffold structures for safe access.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/AT/JG/JM/91234549/scaffolding-brc-clamp.jpg" />
+        <div class="item-text">
+          <strong>BRC Clamp</strong>
+          <span>Used for mesh and steel bar positioning in construction.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/XV/QE/EH/SELLER-24408141/prop-sleeve-with-nut-handle.jpg" />
+        <div class="item-text">
+          <strong>Prop Sleeve</strong>
+          <span>Connects props for adjustable vertical support systems.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/BE/FB/SN/91234549/scaffolding-water-stopper-1000x1000.jpg" />
+        <div class="item-text">
+          <strong>Water Stopper</strong>
+          <span>Prevents water leakage in tie rod systems for concrete work.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/PR/AQ/MY-3196227/waller-plate-500x500.jpg" />
+        <div class="item-text">
+          <strong>Waller Plate</strong>
+          <span>Distributes load of tie rods on shuttering surfaces.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/FK/ZG/GO/2409466/eye-bolts-t-bolts-for-clamps-250x250.jpg" />
+        <div class="item-text">
+          <strong>I-Bolt / T-Bolt</strong>
+          <span>Secures tie rods or formwork frames in place.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/GW/DB/KY/87208593/cast-iron-gogo-machine.jpg" />
+        <div class="item-text">
+          <strong>GOGO Machine</strong>
+          <span>Essential tool for threading scaffolding pipes.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://cpimg.tistatic.com/05294047/b/4/Gogo-Nut-12mm-Heavy-.jpg" />
+        <div class="item-text">
+          <strong>GOGO Nut</strong>
+          <span>Nut component for use with threaded rods in scaffolding.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/KS/GY/GQ/4458884/hollow-jack-nut.jpg" />
+        <div class="item-text">
+          <strong>Hollow Jack Nut</strong>
+          <span>Used with jacks to support adjustable load requirements.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/WI/MP/TX/SELLER-80904065/prop-nut-500x500.jpg" />
+        <div class="item-text">
+          <strong>Prop Nut Standard</strong>
+          <span>Standard nut for precise prop height adjustment.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/ANDROID/Default/2021/3/JC/AC/UR/110589907/product-jpeg-500x500.jpeg" />
+        <div class="item-text">
+          <strong>Prop Nut L&T</strong>
+          <span>Heavy-duty L&T type prop nut for industrial use.</span>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://5.imimg.com/data5/NE/NJ/LS/ANDROID-23928014/product-jpeg-500x500.jpg" />
+        <div class="item-text">
+          <strong>Sikanja</strong>
+          <span>Clamp used in shuttering for firm grip on materials.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

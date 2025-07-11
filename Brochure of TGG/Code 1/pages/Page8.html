@@ -1,0 +1,235 @@
+=<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE GR GROUP - Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { margin: 0; -webkit-print-color-adjust: exact; }
+      .card { page-break-inside: avoid; }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 210mm;
+      height: 297mm;
+      background: linear-gradient(to bottom, #f8f8f8 0%, #e8e8e8 100%);
+      padding: 12mm;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8mm;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e74c3c;
+    }
+
+    .header img {
+      height: 55px;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    }
+
+    .title-area {
+      text-align: right;
+    }
+
+    .title-area h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20pt;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(to right, #e67e22, #d35400);
+      padding: 4px 14px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 11pt;
+      border-radius: 5px;
+      margin-top: 5px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .section-title {
+      background: linear-gradient(to right, #e74c3c, #c0392b);
+      padding: 5px 14px;
+      font-weight: 600;
+      font-size: 12pt;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 8px;
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7mm;
+      margin-top: 4mm;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      display: flex;
+      height: 68mm;
+      border-left: 4px solid #e67e22;
+    }
+
+    .card .image-side {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6mm;
+      background: #fff;
+    }
+
+    .card .image-side img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .card .text-side {
+      width: 50%;
+      padding: 5mm 5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card .text-side h2 {
+      font-size: 10pt;
+      color: #e74c3c;
+      margin-bottom: 4px;
+      font-weight: 600;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .card .text-side p {
+      font-size: 8.5pt;
+      line-height: 1.3;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="5.png" alt="The GR Group Logo">
+      <div class="title-area">
+        <h1>Accessories</h1>
+        <div class="highlight-box">High Quality Fittings</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Accessories List</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="image-side">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2025/5/507515856/KN/WB/KF/146888318/scaffolding-walkway-planks-500x500.jpg">
+        </div>
+        <div class="text-side">
+          <h2>GI & MS Anti-Skid Planks (W/O Hook)</h2>
+          <p>High-strength GI and MS anti-skid planks without hooks. Ideal for safe walking paths on scaffolding.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-side">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2024/12/470575249/YI/YQ/OF/225304827/walkway-plank-500x500.jpeg">
+        </div>
+        <div class="text-side">
+          <h2>GI & MS Anti-Skid Planks (With Hook)</h2>
+          <p>Durable planks with auto-lock hooks for secure placement. Common in maintenance platforms.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-side">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2023/11/362760851/BK/AU/DG/4303884/ms-pipe-khapeda-500x500.jpg">
+        </div>
+        <div class="text-side">
+          <h2>MS Box Pipe (Khapeda / Jali)</h2>
+          <p>Heavy-duty MS box pipe with mesh for ventilation and strength. Used in structural formwork.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-side">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2024/7/438211636/DI/DJ/AF/214018986/gi-telescopic-type-scaffolding-toe-board.jpg">
+        </div>
+        <div class="text-side">
+          <h2>GI Toe Board</h2>
+          <p>Edge protection fixed on decks to prevent material falling. Rust-resistant and lightweight.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-side">
+          <img src="https://5.imimg.com/data5/HF/SO/XE/SELLER-1936101/construction-tie-rod.jpg">
+        </div>
+        <div class="text-side">
+          <h2>Tie Rod</h2>
+          <p>High-strength rods used in formwork systems. Ensures rigidity during slab and wall casting.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-side">
+          <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/XZ/MV/JV/87208593/3-wing-anchor-nut-500x500.jpg">
+        </div>
+        <div class="text-side">
+          <h2>Anchor Wing Nut</h2>
+          <p>Reusable wing nuts for securing tie rods. Designed for heavy loads in shuttering frameworks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

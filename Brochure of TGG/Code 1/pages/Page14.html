@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 14</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .page {
+            width: 21cm;
+            min-height: 29.7cm;
+            margin: 1cm auto;
+            padding: 2cm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            page-break-after: always;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #0066cc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #0066cc;
+            margin: 20px 0 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 20px 0 10px;
+            color: #444;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .website {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        
+        .website a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        
+        .products-list {
+            margin: 20px 0;
+        }
+        
+        .product-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            padding: 0 2cm;
+        }
+        
+        /* Two-column layout for some pages */
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .column {
+            width: 48%;
+        }
+        
+        /* Navigation controls */
+        .page-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            background: rgba(255,255,255,0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        
+        .page-nav button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        
+        /* Responsive adjustments */
+        @media print {
+            body {
+                background: none;
+            }
+            
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+            
+            .page-nav {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 21cm) {
+            .page {
+                width: 100%;
+                margin: 0;
+                padding: 2rem;
+            }
+            
+            .two-columns {
+                flex-direction: column;
+            }
+            
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page" id="page14">
+        <h2>LEDGER SCAFFOLDING</h2>
+        <div class="two-columns">
+            <div class="column">
+                <div class="product-item">Used cuplock Ledger (0.5 mtr)</div>
+                <div class="product-item">Cuplock Ledger (1.2 Mtr)</div>
+            </div>
+            <div class="column">
+                <div class="product-item">Cuplock Ledger (2 Mtr)</div>
+                <div class="product-item">Cuplock Ledger (2.5 Mtr)</div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © IndiaMART InterMESH Ltd
+        </div>
+    </div>
+</body>
+</html>
