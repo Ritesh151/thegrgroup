@@ -27,6 +27,7 @@
 
 .action-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -34,18 +35,48 @@
 .btn-lg {
   padding: 0.5rem 1.5rem;
   font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
 }
 
+/* Add to Cart */
+.btn-add-cart {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-add-cart:hover {
+  background-color: #23272b;
+  color: #ffc107;
+}
+
+/* Back to Products */
+.btn-back {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .product-image {
     margin-bottom: 2rem;
     max-height: 400px;
   }
-  
+
   .action-buttons {
     flex-direction: column;
   }
-  
+
   .action-buttons .btn {
     width: 100%;
     margin-bottom: 0.75rem;

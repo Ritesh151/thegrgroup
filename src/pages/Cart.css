@@ -1,8 +1,8 @@
-/* Cart.css - Dark5k Blue Style */
+/* ─── Cart.css - Golden Light Theme ───────────────────── */
 
 .cart-page {
-  background: linear-gradient(135deg, #0a192f, #112240);
-  color: #ccd6f6;
+  background: linear-gradient(135deg, #fffaf2, #fff3df);
+  color: #5b4522;
   font-family: 'Poppins', sans-serif;
   padding: 60px 20px;
   min-height: 100vh;
@@ -10,19 +10,19 @@
 
 /* Page Heading */
 .cart-page h1 {
-  color: #64ffda;
+  color: #c3821e;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
   font-size: 2.2rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(200, 140, 40, 0.3);
 }
 
 .cart-page hr {
   width: 70px;
-  border-top: 3px solid #64ffda;
+  border-top: 3px solid #f5a623;
   margin: 0 auto 40px;
   border-radius: 10px;
   opacity: 1;
@@ -30,31 +30,31 @@
 
 /* Empty Cart Section */
 .empty-cart {
-  background: rgba(30, 75, 139, 0.3);
+  background: rgba(255, 215, 130, 0.2);
   padding: 60px;
   text-align: center;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(17, 34, 64, 0.5);
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  box-shadow: 0 10px 30px rgba(224, 184, 90, 0.3);
+  border: 1px solid rgba(245, 186, 60, 0.2);
   max-width: 800px;
   margin: 0 auto;
 }
 
 .empty-cart h4 {
   font-size: 1.8rem;
-  color: #e6f1ff;
+  color: #a1681a;
   margin-bottom: 20px;
 }
 
 .empty-cart p {
-  color: #a8b2d1;
+  color: #8c6e3f;
   margin-bottom: 30px;
 }
 
 .empty-cart .btn {
   font-weight: 600;
-  color: #64ffda;
-  border: 2px solid #64ffda;
+  color: #f5a623;
+  border: 2px solid #f5a623;
   border-radius: 30px;
   padding: 12px 30px;
   margin-top: 20px;
@@ -63,9 +63,9 @@
 }
 
 .empty-cart .btn:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: rgba(245, 166, 35, 0.1);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+  box-shadow: 0 5px 15px rgba(245, 186, 60, 0.3);
 }
 
 /* Cart Section */
@@ -74,18 +74,18 @@
 }
 
 .card {
-  background: rgba(30, 75, 139, 0.3);
+  background: rgba(255, 215, 130, 0.1);
   border-radius: 16px;
-  border: 1px solid rgba(100, 255, 218, 0.1);
-  box-shadow: 0 8px 24px rgba(17, 34, 64, 0.5);
+  border: 1px solid rgba(245, 186, 60, 0.2);
+  box-shadow: 0 8px 24px rgba(224, 184, 90, 0.3);
   margin-bottom: 30px;
   overflow: hidden;
 }
 
 .card-header {
-  background: rgba(30, 75, 139, 0.5);
-  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
-  color: #64ffda;
+  background: rgba(245, 186, 60, 0.1);
+  border-bottom: 1px solid rgba(245, 186, 60, 0.15);
+  color: #c3821e;
   font-weight: 700;
   font-size: 1.1rem;
   padding: 15px 25px;
@@ -97,13 +97,13 @@
 
 .card-body p,
 .card-body span {
-  color: #ccd6f6;
+  color: #5b4522;
 }
 
 .card-body .btn {
   background-color: transparent;
-  border: 2px solid #64ffda;
-  color: #64ffda;
+  border: 2px solid #f5a623;
+  color: #c3821e;
   font-weight: 600;
   border-radius: 30px;
   padding: 10px 20px;
@@ -113,9 +113,9 @@
 }
 
 .card-body .btn:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: rgba(245, 166, 35, 0.1);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+  box-shadow: 0 5px 15px rgba(245, 186, 60, 0.3);
 }
 
 /* Quantity Controls */
@@ -124,15 +124,15 @@
   align-items: center;
   justify-content: space-between;
   max-width: 300px;
-  background: rgba(30, 75, 139, 0.5);
+  background: rgba(245, 186, 60, 0.15);
   border-radius: 30px;
   padding: 5px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid rgba(245, 186, 60, 0.3);
 }
 
 .quantity-controls button {
-  background: rgba(100, 255, 218, 0.1);
-  color: #64ffda;
+  background: rgba(245, 186, 60, 0.15);
+  color: #c3821e;
   border: none;
   width: 40px;
   height: 40px;
@@ -142,21 +142,21 @@
 }
 
 .quantity-controls button:hover {
-  background: rgba(100, 255, 218, 0.2);
+  background: rgba(245, 186, 60, 0.25);
 }
 
 .quantity-controls p {
   margin: 0 20px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #e6f1ff;
+  color: #5b4522;
 }
 
 /* WhatsApp Button */
 .btn-success {
-  background-color: #1a3a6a !important;
-  color: #64ffda !important;
-  border: 2px solid #64ffda !important;
+  background-color: #fdf4dc !important;
+  color: #c3821e !important;
+  border: 2px solid #f5a623 !important;
   border-radius: 30px !important;
   font-size: 1rem !important;
   padding: 12px 25px !important;
@@ -169,20 +169,20 @@
 }
 
 .btn-success:hover {
-  background-color: rgba(100, 255, 218, 0.1) !important;
+  background-color: rgba(245, 166, 35, 0.1) !important;
   transform: translateY(-3px) !important;
-  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3) !important;
+  box-shadow: 0 5px 15px rgba(245, 186, 60, 0.3) !important;
 }
 
 .order-summary-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #64ffda;
+  color: #c3821e;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 3px rgba(200, 140, 40, 0.3);
 }
 
 /* Cart Item Image */
@@ -191,7 +191,7 @@
   height: 100px;
   object-fit: cover;
   border-radius: 10px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid rgba(245, 186, 60, 0.3);
 }
 
 /* Responsive */

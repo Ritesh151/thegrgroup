@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -21,11 +20,12 @@ import {
   Checkout,
   PageNotFound,
 } from "./pages";
+
 import ScrollToTop from "./components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
-import Brochuer from "./pages/Brochure";
 import Brochure from "./pages/Brochure";
 import SingleProduct from "./pages/SingleProduct";
+import CategoryPage from "./pages/CategoryPage"; // ✅ Make sure this file exists
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -36,16 +36,17 @@ root.render(
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Products />} />
           <Route path="/product/:id" element={<Product />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<SingleProduct />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/brochure" element={<Brochure />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/category/:name" element={<CategoryPage />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/products/*" element={<PageNotFound />} />
-          <Route path="/brochure" element={<Brochure />} />
         </Routes>
       </Provider>
     </ScrollToTop>

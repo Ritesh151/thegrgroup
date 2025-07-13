@@ -1,9 +1,9 @@
 /* ─── Section Base ────────────────────────────────────── */
 .product-section {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #0a192f, #112240);
-  color: #ccd6f6;
-  font-family: 'Poppins', sans-serif;
+  background: #fffdf9;
+  color: #2c2c2c;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
   text-align: center;
   animation: fadeInUp 0.8s ease-out forwards;
   position: relative;
@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: #64ffda;
+  background: #f5a623;
   animation: borderGrow 1s ease-out forwards;
 }
 
@@ -45,20 +45,18 @@
 }
 
 .product-section h1 {
-  color: #e6f1ff;
+  color: #c47a08;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
   font-size: 2.8rem;
-  position: relative;
-  display: inline-block;
 }
 
 .product-section h2 {
-  color: #64ffda;
+  color: #a86400;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-bottom: 2rem;
   font-size: 2rem;
   position: relative;
@@ -72,14 +70,14 @@
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: #64ffda;
+  background: #f5a623;
   border-radius: 3px;
 }
 
 .product-section hr {
   border: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, #1e4b8b, transparent);
+  background: linear-gradient(to right, transparent, #f5a623, transparent);
   margin: 2rem auto;
   max-width: 800px;
 }
@@ -105,42 +103,40 @@
 }
 
 .category-list a {
-  color: #a8b2d1;
+  color: #5c4a1f;
   text-decoration: none;
   font-size: 1.1rem;
+  padding: 8px 15px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   display: block;
-  padding: 8px 15px;
-  border-radius: 4px;
 }
 
 .category-list a:hover {
-  color: #64ffda;
-  background: rgba(100, 255, 218, 0.1);
+  color: #c47a08;
+  background: #fff3dd;
   transform: translateX(5px);
 }
 
 /* ─── Filter Buttons ──────────────────────────────────── */
 .category-buttons .btn {
   font-weight: 600;
-  border: 2px solid #64ffda;
-  color: #64ffda;
-  background: rgba(100, 255, 218, 0.05);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid #f5a623;
+  color: #a86400;
+  background: #fff8ec;
+  transition: all 0.3s ease;
   border-radius: 30px;
   padding: 10px 24px;
   font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  position: relative;
-  overflow: hidden;
+  cursor: pointer;
 }
 
 .category-buttons .btn:hover,
 .category-buttons .btn.active {
-  background-color: #64ffda;
-  color: #0a192f;
+  background-color: #ffe4b5;
+  color: #2c2c2c;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(100, 255, 218, 0.3);
+  box-shadow: 0 8px 20px rgba(255, 204, 102, 0.3);
 }
 
 /* ─── Product Cards ───────────────────────────────────── */
@@ -154,12 +150,12 @@
 }
 
 .product-card {
-  background: #112240;
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  background: #fff8ec;
+  border: 1px solid #f8d89c;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.4s ease;
-  box-shadow: 0 4px 20px rgba(17, 34, 64, 0.5);
+  box-shadow: 0 4px 20px rgba(255, 204, 102, 0.3);
   position: relative;
 }
 
@@ -170,7 +166,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: #64ffda;
+  background: #f5a623;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -178,7 +174,7 @@
 
 .product-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 12px 24px rgba(255, 204, 102, 0.4);
 }
 
 .product-card:hover::after {
@@ -189,7 +185,7 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  border-bottom: 1px solid #f5deb3;
   transition: transform 0.4s ease;
 }
 
@@ -205,7 +201,7 @@
 .product-card .card-title {
   font-weight: 700;
   font-size: 1.4rem;
-  color: #e6f1ff;
+  color: #c47a08;
   margin-bottom: 0.8rem;
   position: relative;
 }
@@ -217,12 +213,12 @@
   left: 0;
   width: 40px;
   height: 2px;
-  background: #64ffda;
+  background: #f5a623;
 }
 
 .product-card .card-text {
   font-size: 0.95rem;
-  color: #a8b2d1;
+  color: #5c4a1f;
   margin-bottom: 1.2rem;
   line-height: 1.7;
 }
@@ -235,7 +231,7 @@
 
 .product-features li {
   padding: 8px 0;
-  color: #ccd6f6;
+  color: #2c2c2c;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
@@ -243,42 +239,53 @@
 
 .product-features li::before {
   content: '•';
-  color: #64ffda;
+  color: #f5a623;
   font-size: 1.5rem;
   margin-right: 10px;
 }
 
 /* ─── Action Buttons ──────────────────────────────────── */
 .product-card .btn-primary {
-  background-color: #64ffda;
-  color: #0a192f;
+  background-color: #f5a623;
+  color: #fff;
   border: none;
   font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .product-card .btn-primary:hover {
-  background-color: #52d1b9;
+  background-color: #d99100;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.4);
+  box-shadow: 0 5px 15px rgba(255, 204, 102, 0.4);
 }
 
 .product-card .btn-outline {
-  border: 2px solid #64ffda;
-  color: #64ffda;
+  border: 2px solid #f5a623;
+  color: #a86400;
   background: transparent;
 }
 
 .product-card .btn-outline:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: #fff3dd;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 5px 15px rgba(255, 204, 102, 0.2);
 }
 
 /* ─── Badges & Labels ────────────────────────────────── */
 .product-badge {
-  background: #64ffda;
-  color: #0a192f;
-  box-shadow: 0 2px 10px rgba(100, 255, 218, 0.3);
+  background: #f5a623;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(255, 204, 102, 0.3);
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  position: absolute;
+  top: 12px;
+  left: 12px;
 }
 
 /* ─── Responsive ─────────────────────────────────────── */
